@@ -1,24 +1,24 @@
 // DROPDOWN
 
-const btnDropdown = document.querySelector(".js-btn-dropdown");
-const dropdown = document.querySelector(".js-dropdown");
+// const btnDropdown = document.querySelector(".js-btn-dropdown");
+// const dropdown = document.querySelector(".js-dropdown");
 
-function openDropdown(event) {
-  event.preventDefault();
+// function openDropdown(event) {
+//   event.preventDefault();
 
-  dropdown.classList.toggle("active");
-}
+//   dropdown.classList.toggle("active");
+// }
 
-btnDropdown.addEventListener("click", openDropdown);
+// btnDropdown.addEventListener("click", openDropdown);
 
-dropdown.addEventListener("mouseleave", openDropdown);
+// dropdown.addEventListener("mouseleave", openDropdown);
 
 // Fixed Menu
 
 const header = document.getElementById("js-header");
 
 function fixedMenu() {
-  if (window.pageYOffset > 719) {
+  if (window.scrollY > 700) {
     header.classList.add("fixed-menu");
   } else {
     header.classList.remove("fixed-menu");
@@ -40,4 +40,4 @@ function openMenuMobile() {
 
 btnMenu.addEventListener("click", openMenuMobile);
 
-overlayMenu.addEventListener("click", openMenuMobile);
+// overlayMenu.addEventListener("click", openMenuMobile);

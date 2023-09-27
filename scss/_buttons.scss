@@ -2,9 +2,9 @@
   border: 1px solid #00a5f0;
   background-color: transparent;
   color: $brand-blue-light;
-  transition: all 0.3s;
+  font-weight: 600;
   &:hover {
-    background-color: $brand-blue-light; //here what I changed
+    background-color: $brand-blue-light;
     color: white;
   }
 
@@ -13,19 +13,24 @@
     color: white;
     &:hover {
       background-color: white;
-      color: $brand-ciano;
+      color: $brand-blue-normal;
     }
   }
 }
 
+.btn-secondary a,
+.btn-primary a {
+  display: block;
+  width: 127%;
+}
+
 .btn-primary {
-  background-color: $brand-red;
+  background-color: $brand-blue-normal;
   color: #ffffff;
   font-weight: 600;
-  transition: background-color 0.3s;
   &:hover {
-    background-color: #ffffff;
-    color: $brand-red;
+    background-color: $brand-blue-light;
+    color: $brand-blue-normal;
   }
 }
 
@@ -34,7 +39,11 @@
   display: inline-block;
   padding: 0 3rem;
   border-radius: 122px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 4.8rem;
   font-size: 1.6rem;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }

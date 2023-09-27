@@ -18,7 +18,7 @@ header {
       ul {
         li {
           a {
-            color: #5f5c6b;
+            background-color: #5f5c6b;
             &:hover {
               color: #00a5f0;
             }
@@ -26,14 +26,15 @@ header {
         }
       }
     }
-    .btn-secondary {
-      color: #00a5f0;
-      border: 1px solid #00a5f0;
-      &:hover {
-        background-color: #00a5f0;
-        color: white;
-      }
-    }
+    // .btn-secondary {
+    //   color: $white;
+    //   background-color: white;
+    //   border: 1px solid #00a5f0;
+    //   &:hover {
+    //     background-color: #00a5f0;
+    //     color: white;
+    //   }
+    // }
     .logo {
       background-image: url("../img/assets/Logo (8 (1).png");
     }
