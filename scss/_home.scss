@@ -322,11 +322,13 @@
 }
 
 .whatsapp-logo {
-  display: inline-blocks;
+  display: inline-block;
   width: 8rem;
+  font-size: 1.5rem;
   position: fixed;
   bottom: 4rem;
-  right: 4rem;
+  right: 1rem;
+  z-index: 4000;
 }
 
 .s-card-neon {
@@ -574,10 +576,10 @@
       .first-card-box {
         .button {
           p {
-            right: -5.2rem;
+            right: 8.8rem;
           }
         }
-        H3 {
+        h3 {
           width: 93%;
           font-size: 345%;
         }
@@ -603,7 +605,8 @@
         .button {
           width: 69%;
           p {
-            right: 27%;
+            font-size: 56px;
+            right: 4.7rem;
           }
         }
       }
