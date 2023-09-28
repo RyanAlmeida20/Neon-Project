@@ -26,15 +26,6 @@ header {
         }
       }
     }
-    // .btn-secondary {
-    //   color: $white;
-    //   background-color: white;
-    //   border: 1px solid #00a5f0;
-    //   &:hover {
-    //     background-color: #00a5f0;
-    //     color: white;
-    //   }
-    // }
     .logo {
       background-image: url("../img/assets/Logo (1) (1).png");
     }
@@ -123,40 +114,6 @@ header {
             color: $brand-blue-normal;
           }
         }
-      }
-    }
-  }
-  .btn-primary-mobile {
-    display: none;
-    margin-left: 4rem;
-  }
-  @include responsive(1080px) {
-    nav {
-      ul {
-        margin-right: 3rem;
-        li {
-          &:not(:first-child) {
-            margin-left: 2.5rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive(991px) {
-    nav {
-      ul {
-        display: none;
-      }
-    }
-    .btn-primary-mobile {
-      display: block;
-    }
-  }
-  @include responsive(498px) {
-    height: 7.3rem;
-    nav {
-      .btn-secondary {
-        display: none;
       }
     }
   }
