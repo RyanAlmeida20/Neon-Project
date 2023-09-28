@@ -30,8 +30,6 @@
         margin-top: 6.4rem;
       }
       ul {
-        width: 100%;
-        max-width: 66.1rem;
         margin-top: 6.4rem;
         display: flex;
         align-items: center;
@@ -225,12 +223,12 @@
     }
   }
   @include responsive(556px) {
-    height: 79rem;
+    height: 72rem;
     .container {
       padding-top: 0;
       .text {
         h3 {
-          font-size: 1.6rem;
+          font-size: 3.6rem;
           line-height: 120%;
           margin-bottom: 1.5rem;
         }
@@ -246,8 +244,8 @@
         ul {
           flex-direction: column;
           align-items: flex-start;
-          max-width: fit-content;
           li {
+            width: 100%;
             &:not(:last-child) {
               margin-bottom: 1.7rem;
             }
@@ -257,6 +255,8 @@
               width: 2rem;
             }
             span {
+              width: 100%;
+              font-size: 200%;
               br {
                 display: none;
               }
@@ -272,7 +272,7 @@
         .image {
           max-width: 32.5rem;
           height: 24.8rem;
-          margin-top: -2rem;
+          margin-top: -6rem;
           .circle {
             height: 18.8rem;
             max-width: 25.7rem;
@@ -292,7 +292,7 @@
       }
     }
   }
-  @include responsive(375px) {
+  @include responsive(470px) {
     height: 79rem;
     .container {
       .text {
@@ -460,7 +460,7 @@
   @include responsive(375px) {
     .container {
       .right-area {
-        margin-top: 3.9rem;
+        margin-top: 6.9rem;
         .main-text {
           h2 {
             bottom: 39rem;
