@@ -342,7 +342,7 @@
     margin-right: auto;
     .main-text {
       position: relative;
-      h2 {
+      .intro-button {
         max-width: 48.8rem;
         margin-bottom: 1.6rem;
         position: absolute;
@@ -352,7 +352,9 @@
         bottom: 38rem;
         right: 20rem;
         border-radius: 2rem;
+        padding: 1rem;
       }
+
       h4 {
         font-weight: 600;
         font-size: 3rem;
@@ -385,8 +387,18 @@
         }
       }
     }
-    a {
-      margin-top: 3.2rem;
+    .cta-button {
+      max-width: 48.8rem;
+      margin-bottom: 1.6rem;
+      background-color: #605e5e;
+      padding: 3rem;
+      border-radius: 2rem;
+      padding: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
+      text-align: center;
+      color: white;
     }
     .btn {
       position: relative;
@@ -489,25 +501,27 @@
       max-width: 67rem;
       height: 67rem;
       padding-top: 1.6rem;
-      p {
+      h3 {
         color: #fff;
         text-align: center;
         font-size: 5.2rem;
         font-weight: 400;
         width: 63rem;
+        z-index: 4;
+        text-shadow: 3px 1px 20px #00000069;
       }
       .button {
         width: 30rem;
         position: relative;
         margin-top: 1.3rem;
+        animation: pulse 2s infinite;
         p {
           font-size: 67px;
           color: #ce2f2f;
           font-weight: bold;
           position: absolute;
           top: 34%;
-          right: -15.2rem;
-          animation: pulse 2s infinite;
+          right: 8.8rem;
         }
       }
     }
@@ -545,9 +559,6 @@
     .box-card {
       max-width: 61rem;
       .first-card-box {
-        p {
-          padding: 1rem 2rem;
-        }
       }
       .second-card-box {
         right: 5%;
@@ -563,10 +574,10 @@
       .first-card-box {
         .button {
           p {
-            right: 2.8rem;
+            right: -5.2rem;
           }
         }
-        p {
+        H3 {
           width: 93%;
           font-size: 345%;
         }
@@ -592,7 +603,7 @@
         .button {
           width: 69%;
           p {
-            right: 7%;
+            right: 27%;
           }
         }
       }
@@ -610,8 +621,6 @@
       .second-card-box {
         width: 94%;
         right: 3%;
-        p {
-        }
       }
     }
   }
@@ -786,13 +795,15 @@
 
 .s-information {
   @include flex(column, center, center);
-  padding-top: 25rem;
+  padding: 22rem 2rem 8rem 2rem;
   .text {
     @include flex(row, center, space-evenly);
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     .left-area {
       @include flex(column, center, center);
+      width: 100%;
+
       img {
         width: 14rem;
         box-shadow: 3px 1px 20px 0px #e7e7e7;
@@ -800,15 +811,14 @@
       }
       .text-area {
         @include flex(column, center, center);
-        padding-top: 3rem;
-        width: 100%;
-        max-width: 65rem;
+        padding: 2rem 0;
+        width: 91%;
+        max-width: 71rem;
         p {
-          font-size: 2.7rem;
+          font-size: 236%;
         }
         .second-line {
           margin-top: 1.5rem;
-          color: #605e5e;
         }
         h3 {
           margin-top: 1.5rem;
@@ -816,13 +826,21 @@
           font-weight: bold;
           color: $gray-500;
         }
+      }
+      .places {
+        width: 100%;
+        max-width: 74rem;
         ul {
           @include flex(row, center, center);
-          margin-top: 3rem;
           gap: 1rem;
+          width: 100%;
+          max-width: 100%;
+          padding-left: 2rem;
+          padding-right: 2rem;
 
           li {
-            width: 24rem;
+            width: 100%;
+            max-width: 33%;
             text-align: center;
             border-radius: 1rem;
             background-color: $brand-blue-strong;
@@ -832,14 +850,14 @@
               transition: all 0.3s;
               cursor: pointer;
               color: white;
+              transform: scale(1.05);
             }
             a {
               border-radius: 1rem;
               color: white;
-              font-size: 2rem;
+              font-size: 208%;
               width: 100%;
               height: 6rem;
-              max-width: 24rem;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -847,6 +865,9 @@
           }
         }
       }
+    }
+
+    @include responsive(610px) {
     }
   }
   .cta {
@@ -859,25 +880,49 @@
       height: auto;
     }
   }
+
+  @include responsive(561px) {
+    .text {
+      .left-area {
+        .places {
+          ul {
+            @include flex(column, center, center);
+            li {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(674px) {
+    padding-top: 12rem;
+    .text {
+      .left-area {
+        .text-area {
+          width: 80%;
+          p {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-testimonials {
   @include flex(row, center, center);
-  padding-top: 6rem;
-  margin-bottom: 6rem;
-
-  li:nth-child(odd) {
-    margin-top: 10rem;
-  }
+  padding: 7rem 2rem;
 
   ul {
     display: flex;
-    gap: 4rem;
+    gap: 1rem;
     li {
       display: flex;
       align-items: center;
       padding: 0rem 2rem;
-      height: 29rem;
+      height: 24.786rem;
       box-shadow: rgba(52, 48, 21, 0.23) 9px 5px 11px 0px;
       background-color: $brand-blue-grey;
       border-radius: 2rem;
@@ -888,6 +933,9 @@
           max-width: 30rem;
           padding: 1rem 1rem;
           font-size: 2rem;
+          p {
+            font-size: 95%;
+          }
         }
         .person-information {
           display: flex;
@@ -925,12 +973,64 @@
           }
         }
       }
+      &:nth-child(odd) {
+        margin-top: 10rem;
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    ul {
+      flex-direction: column;
+      width: 100%;
+      li {
+        height: 16.786rem;
+        margin-top: 0 !important;
+        .person {
+          display: flex;
+          align-items: center;
+          .text {
+            margin-left: 2rem;
+            max-width: 100%;
+          }
+          .person-information {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 14rem;
+            text-align: center;
+            .text-information {
+              p {
+                font-size: 1.8rem;
+              }
+              .person-stars {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(561px) {
+    ul {
+      li {
+        height: 30vh;
+        padding: 0 0;
+        .person {
+          .text {
+            margin-left: 0;
+            p {
+              font-size: 80%;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 .s-depoimentos {
-  padding-top: 10rem;
   .top {
     margin-bottom: 4rem;
     span {
@@ -1000,21 +1100,23 @@
   margin-right: auto;
   width: 100%;
   max-width: 90rem;
-  background: rgb(0, 151, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 151, 255, 1) 0%,
-    rgba(58, 95, 140, 1) 100%
-  );
-  border-radius: 1rem;
+  padding: 0 3rem;
   margin-bottom: 4rem;
   .container {
     box-shadow: rgba(52, 48, 21, 0.23) 1px 8px 11px 0px;
-    padding-bottom: 4rem;
+    padding: 0 3rem 4rem 3rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 151, 255) 0%,
+      rgb(58, 95, 140) 100%
+    );
+
     @include flex(column, center, center);
     img {
       width: 20rem;
       height: auto;
+      transition: all 0.3s;
     }
     h3 {
       color: white;
@@ -1033,6 +1135,11 @@
       max-width: 52rem;
       padding: 1rem 3rem;
     }
+    &:hover {
+      img {
+        transform: scale(1.07);
+      }
+    }
   }
 
   @include responsive(1200px) {
@@ -1040,12 +1147,44 @@
   @include responsive(1050px) {
   }
   @include responsive(674px) {
+    .container {
+      h3 {
+        line-height: 6rem;
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
   }
   @include responsive(610px) {
   }
   @include responsive(561px) {
   }
   @include responsive(375px) {
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse-color;
+}
+
+@keyframes pulse-color {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    color: $brand-blue-light;
+  }
+  100% {
+    transform: scale(1.1);
+    color: $brand-ciano;
   }
 }
 
@@ -1074,4 +1213,49 @@
   100% {
     transform: scale(0.95);
   }
+}
+
+.faa-ring {
+  margin-right: 2rem;
+  color: white;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(-15deg);
+  }
+  9% {
+    transform: rotate(15deg);
+  }
+  18% {
+    transform: rotate(-18deg);
+  }
+  27% {
+    transform: rotate(18deg);
+  }
+  36% {
+    transform: rotate(-22deg);
+  }
+  45% {
+    transform: rotate(22deg);
+  }
+  54% {
+    transform: rotate(-18deg);
+  }
+  63% {
+    transform: rotate(18deg);
+  }
+  72% {
+    transform: rotate(-12deg);
+  }
+  81% {
+    transform: rotate(12deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+}
+.faa-ring {
+  -webkit-animation: ring 0.7s ease-in-out infinite;
+  animation: ring 2s infinite;
 }
