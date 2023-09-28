@@ -449,7 +449,7 @@
       .right-area {
         .main-text {
           h2 {
-            bottom: 110%;
+            bottom: 101%;
             right: 20%;
             font-size: 2.5rem;
           }
@@ -505,7 +505,7 @@
           color: #ce2f2f;
           font-weight: bold;
           position: absolute;
-          top: 10rem;
+          top: 34%;
           right: -15.2rem;
           animation: pulse 2s infinite;
         }
@@ -534,6 +534,83 @@
         line-height: normal;
         strong {
           font-weight: 900;
+        }
+      }
+    }
+  }
+
+  @include responsive(1200px) {
+  }
+  @include responsive(1050px) {
+    .box-card {
+      max-width: 61rem;
+      .first-card-box {
+        p {
+          padding: 1rem 2rem;
+        }
+      }
+      .second-card-box {
+        right: 5%;
+        bottom: -25%;
+        padding: 0.9rem 0.9rem;
+      }
+    }
+  }
+  @include responsive(674px) {
+    .box-card {
+      height: 51rem;
+      width: 79%;
+      .first-card-box {
+        .button {
+          p {
+            right: 2.8rem;
+          }
+        }
+        p {
+          width: 93%;
+          font-size: 345%;
+        }
+      }
+      .second-card-box {
+        width: 95%;
+        right: 1rem;
+        bottom: -6rem;
+        p {
+          font-size: 242%;
+        }
+      }
+    }
+  }
+  @include responsive(610px) {
+  }
+  @include responsive(561px) {
+    .box-card {
+      .first-card-box {
+        p {
+          font-size: 285%;
+        }
+        .button {
+          width: 69%;
+          p {
+            right: 7%;
+          }
+        }
+      }
+      .second-card-box {
+        bottom: -15%;
+        p {
+          font-size: 211%;
+        }
+      }
+    }
+  }
+  @include responsive(375px) {
+    .box-card {
+      height: 48rem;
+      .second-card-box {
+        width: 94%;
+        right: 3%;
+        p {
         }
       }
     }
