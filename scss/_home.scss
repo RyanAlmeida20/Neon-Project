@@ -456,7 +456,7 @@
           .txt {
             margin-left: 4.3rem;
             h3 {
-              font-size: 24px;
+              font-size: 2rem;
               letter-spacing: -0.5px;
               color: $gray-600;
             }
@@ -914,6 +914,9 @@
         max-width: 71rem;
         p {
           font-size: 236%;
+          strong {
+            color: #161616c2;
+          }
         }
         .second-line {
           margin-top: 1.5rem;
@@ -922,7 +925,7 @@
           margin-top: 1.5rem;
           text-align: center;
           font-weight: bold;
-          color: $gray-500;
+          color: #161616c2;
         }
       }
       .places {
@@ -1126,12 +1129,17 @@
         .person {
           .person-information {
             margin-left: -1rem;
+            .text-information {
+              p {
+                font-size: 1.4rem;
+              }
+            }
           }
           .text {
             margin-left: 0;
             padding-left: 0;
             p {
-              font-size: 63%;
+              font-size: 69%;
             }
           }
         }
