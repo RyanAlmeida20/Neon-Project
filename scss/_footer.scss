@@ -21,10 +21,12 @@ footer {
   @include responsive(1050px) {
     .container {
       padding: 0 1.5rem;
+      flex-direction: column;
       img {
-        margin-top: 1.2rem;
+        margin-top: 0;
       }
       p {
+        margin-top: 2rem;
         span {
           display: block;
         }
@@ -68,6 +70,9 @@ footer {
     .container {
       p {
         font-size: 1.7rem;
+      }
+      nav {
+        width: 100%;
       }
     }
   }

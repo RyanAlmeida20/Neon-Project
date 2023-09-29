@@ -117,61 +117,30 @@ header {
       }
     }
   }
-}
-
-.menu-mobile {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-  }
-  aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 100%;
-    background-color: white;
-    padding: 3rem;
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-    .logo {
-      max-width: 15rem;
-      margin-bottom: 4rem;
-    }
-    ul {
-      li {
+  @include responsive(600px) {
+    .container {
+      padding: 0 1.5rem;
+      nav {
+        width: 50%;
         a {
-          padding: 1.5rem 0;
-          display: block;
-          font-size: 1.8rem;
-          color: #5f5c6b;
+          padding: 0 1rem;
+          line-height: 3.8rem;
         }
       }
     }
   }
-}
-
-.menu-opened {
-  overflow: hidden;
-  .menu-mobile {
-    opacity: 1;
-    pointer-events: all;
-  }
-  aside {
-    transform: translateX(0);
+  @include responsive(375px) {
+    .container {
+      .logo {
+        width: 13rem;
+      }
+      nav {
+        max-width: 15rem;
+        width: 45%;
+        a {
+          font-size: 1.28rem;
+        }
+      }
+    }
   }
 }
