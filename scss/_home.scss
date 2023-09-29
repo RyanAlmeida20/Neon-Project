@@ -101,10 +101,6 @@
           max-width: 30.2rem;
           animation: floatingY 6s infinite;
         }
-        .circle {
-          top: 2.8rem;
-          right: 4.3rem;
-        }
       }
     }
   }
@@ -154,9 +150,6 @@
         padding-right: 1rem;
         .image {
           height: 36rem;
-          .circle {
-            max-width: 71%;
-          }
           .card-front {
             top: 16.1rem;
             right: 25rem;
@@ -200,10 +193,6 @@
           max-width: 23.2rem;
           top: 130px;
           right: 50px;
-        }
-        .circle {
-          max-width: 33rem;
-          right: 16.3rem;
         }
       }
     }
@@ -255,19 +244,14 @@
             left: 26rem;
             top: -1.9rem;
           }
-          .circle {
-            max-width: 26.9rem;
-            height: 23.8rem;
-            top: -10.2rem;
-            right: 0.3rem;
-          }
         }
       }
     }
   }
 
   @include responsive(690px) {
-    height: 77rem;
+    height: 65rem;
+
     .container {
       .text {
         h3 {
@@ -278,13 +262,10 @@
         }
       }
       .area-image {
-        top: 4rem;
+        top: -10rem;
         right: 19rem;
         .image {
           max-width: 23.1rem;
-          .circle {
-            top: -4.2rem;
-          }
           .card-front {
             left: 0rem;
             top: 6.1rem;
@@ -295,7 +276,7 @@
   }
 
   @include responsive(556px) {
-    height: 70rem;
+    height: 58rem;
     .container {
       padding-top: 0;
       .text {
@@ -353,13 +334,7 @@
         .image {
           max-width: 32.5rem;
           height: 24.8rem;
-          margin-top: -6rem;
-          .circle {
-            height: 18.8rem;
-            max-width: 25.7rem;
-            top: 3.8rem;
-            right: 6.3rem;
-          }
+          margin-top: -15rem;
           .card-front {
             max-width: 10rem;
             top: 11rem;
@@ -374,33 +349,17 @@
       }
     }
   }
-  // @include responsive(470px) {
-  //   height: 79rem;
-  //   .container {
-  //     .text {
-  //       h1 {
-  //         font-size: 3.1rem;
-  //       }
-  //     }
-  //     .area-image {
-  //       transform: translateX(2.8rem);
-  //       .image {
-  //         .card-front {
-  //           left: 0rem;
-  //           max-width: 10rem;
-  //         }
-  //         .card-back {
-  //           max-width: 13rem;
-  //           top: 11rem;
-  //         }
-  //         .circle {
-  //           max-width: 19.7rem;
-  //           right: 7.3rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+
+  @include responsive(375px) {
+    .container {
+      .text {
+        padding-right: 8.99rem;
+        h3 {
+          font-size: 2.097rem;
+        }
+      }
+    }
+  }
 }
 
 .whatsapp-logo {
@@ -534,7 +493,7 @@
   @include responsive(690px) {
     .container {
       .right-area {
-        margin-top: 9rem;
+        margin-top: 7rem;
         .main-text {
           .intro-button {
             width: 100%;
@@ -578,6 +537,9 @@
       }
       .cta-button {
         font-size: 2.5rem;
+        h2 {
+          font-weight: 400;
+        }
       }
     }
   }
@@ -798,7 +760,7 @@
     }
   }
 }
-@include responsive(674px) {
+@include responsive(691px) {
   .container {
     .right-area {
       .box-card {
@@ -1164,7 +1126,7 @@
           }
           .text {
             margin-left: 0;
-            padding-left: 0;
+            padding-right: 1.6rem;
             p {
               font-size: 69%;
             }
@@ -1311,7 +1273,7 @@
         font-size: 2.8rem;
       }
       p {
-        font-size: 1.8rem;
+        font-size: 1.326rem;
       }
     }
   }

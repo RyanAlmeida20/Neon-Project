@@ -68,6 +68,9 @@ footer {
   }
   @include responsive(600px) {
     .container {
+      img {
+        width: 18rem;
+      }
       p {
         font-size: 1.7rem;
       }
