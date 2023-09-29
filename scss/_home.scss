@@ -524,20 +524,35 @@
         margin-top: 0;
         .intro-button {
           bottom: 115%;
-          right: 24%;
+          // right: 24%;
         }
       }
     }
   }
-  @include responsive(610px) {
+  @include responsive(690px) {
+    .container {
+      .right-area {
+        margin-top: 9rem;
+        .main-text {
+          .intro-button {
+            width: 100%;
+            left: 22%;
+            max-width: 34.8rem;
+          }
+        }
+      }
+    }
   }
   @include responsive(561px) {
     .container {
       .right-area {
         .main-text {
-          h2 {
+          margin-top: 4rem;
+          .intro-button {
+            width: 100%;
+            left: 24%;
+            max-width: 21.8rem;
             bottom: 101%;
-            right: 24%;
             font-size: 2.5rem;
           }
         }
@@ -550,12 +565,12 @@
   @include responsive(375px) {
     .container {
       .right-area {
-        margin-top: 6.9rem;
+        margin-top: 7.9rem;
         .main-text {
-          h2 {
+          .intro-button {
             bottom: 39rem;
-            right: 0rem;
             font-size: 2rem;
+            left: 15%;
           }
         }
       }
@@ -893,11 +908,11 @@
 
 .s-information {
   @include flex(column, center, center);
-  padding: 22rem 2rem 8rem 2rem;
+  padding: 22rem 2rem 5rem 2rem;
   .text {
     @include flex(row, center, space-evenly);
     width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     .left-area {
       @include flex(column, center, center);
       width: 100%;
@@ -996,7 +1011,7 @@
       }
     }
     .cta {
-      font-size: 1.4rem;
+      font-size: 1.38em;
       line-height: 3rem;
       padding: 2rem 1rem;
       .faa-ring {
@@ -1016,6 +1031,12 @@
           }
         }
       }
+    }
+  }
+
+  @include responsive(375px) {
+    .cta {
+      font-size: 1.3rem;
     }
   }
 }
@@ -1051,7 +1072,7 @@
           align-items: center;
           .text-information {
             p {
-              padding-left: 2rem;
+              // padding-left: 2rem;
               font-size: 2rem;
             }
             .person-stars {
@@ -1191,7 +1212,6 @@
     }
   }
   @include responsive(480px) {
-    padding-top: 5.6rem;
     .container {
       padding: 0;
       .top {
