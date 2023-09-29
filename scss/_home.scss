@@ -39,6 +39,17 @@
           display: flex;
           align-items: center;
           width: 100%;
+          .icon {
+            display: flex;
+            height: 4.8rem;
+            width: 4.8rem;
+            border-radius: 50%;
+            @include flex(row, center, center);
+            margin-right: 1.2rem;
+            img {
+              width: 60%;
+            }
+          }
           span {
             font-size: 2.7rem;
             width: 100%;
@@ -47,18 +58,7 @@
             margin-right: 2rem;
           }
         }
-        .icon {
-          display: flex;
-          height: 4.8rem;
-          width: 4.8rem;
-          border-radius: 50%;
-          @include flex(row, center, center);
-          margin-right: 1.2rem;
-          ::hover {
-            width: 400px;
-            // background-image: url("img/assets/record_sem_vermelho.png");
-          }
-        }
+
         span {
           font-size: 1.7rem;
           font-weight: 400;
@@ -72,14 +72,6 @@
       width: 100%;
       max-width: 70.6rem;
       margin-right: -21rem;
-
-      h2 {
-        margin-bottom: 6.7rem;
-        text-align: center;
-        color: white;
-        opacity: 0.4;
-        font-weight: 600;
-      }
       .image {
         position: relative;
         width: 100%;
@@ -88,7 +80,7 @@
           position: absolute;
         }
         .card-front {
-          top: 9.1rem;
+          top: 20.1rem;
           right: 38rem;
           z-index: 2;
           max-width: 24.5rem;
@@ -101,25 +93,52 @@
           max-width: 30.2rem;
           animation: floatingY 6s infinite;
         }
+        .intro-button {
+          max-width: 48.8rem;
+          margin-bottom: 1.6rem;
+          position: absolute;
+          background-color: #605e5e;
+          color: white;
+          padding: 3rem;
+          bottom: 6rem;
+          right: 34%;
+          border-radius: 2rem;
+          padding: 1rem;
+          z-index: 2;
+          font-size: 4rem;
+        }
       }
     }
   }
 
   @include responsive(1440px) {
-    height: 68.6rem;
+    height: 92.6rem;
     .container {
       .area-image {
         position: relative;
         right: -10%;
+        top: 16rem;
         margin: 0 auto;
         .image {
+          .intro-button {
+            font-size: 3.6rem;
+          }
           .card-front {
+            top: 30.1rem;
+            right: 31rem;
+            max-width: 19.5rem;
+          }
+          .card-back {
+            bottom: 7.6rem;
+            right: 138px;
+            max-width: 20.2rem;
           }
         }
       }
     }
   }
   @include responsive(1366px) {
+    height: 68.6rem;
     .container {
       .text {
         h3 {
@@ -131,6 +150,7 @@
           margin-bottom: 2.9rem;
         }
         .image {
+          height: 33rem;
           max-width: 600px;
           .card-back {
             right: 4rem;
@@ -160,13 +180,17 @@
             right: 94px;
             max-width: 16.2rem;
           }
+          .intro-button {
+            font-size: 3rem;
+            bottom: -3rem;
+            right: 28%;
+          }
         }
       }
     }
   }
   @include responsive(1050px) {
     padding-top: 12rem;
-    // height: 81.6rem;
     .container {
       margin: 0;
       .text {
@@ -174,25 +198,25 @@
           font-size: 2.6rem;
         }
       }
-    }
-    .area-image {
-      top: 22rem;
-      margin-right: -1rem;
-      right: 0;
-      h2 {
-        margin-bottom: 1.5rem;
-      }
-      .image {
-        // height: 45rem;
-        .card-front {
-          max-width: 20.5rem;
-          top: 16.1rem;
-          right: 21rem;
-        }
-        .card-back {
-          max-width: 23.2rem;
-          top: 130px;
-          right: 50px;
+
+      .area-image {
+        top: 22rem;
+        margin-right: -1rem;
+        right: 0;
+        .image {
+          .card-front {
+            max-width: 20.5rem;
+            top: 16.1rem;
+            right: 21rem;
+          }
+          .card-back {
+            max-width: 23.2rem;
+            top: 130px;
+            right: 50px;
+          }
+          .intro-button {
+            bottom: -1rem;
+          }
         }
       }
     }
@@ -203,7 +227,6 @@
     width: 168%;
     .container {
       flex-direction: column;
-      // align-items: center;
       .text {
         margin-bottom: 5rem;
         width: 100%;
@@ -221,8 +244,8 @@
       }
       .area-image {
         margin: 0px auto;
-        right: 22rem;
-        top: -9rem;
+        right: 19rem;
+        top: -13rem;
 
         h2 {
           margin-bottom: 1.9rem;
@@ -230,19 +253,23 @@
           transform: translateX(10%);
         }
         .image {
-          max-width: 51.1rem;
           height: 42.4rem;
           margin: 0 auto;
           transform: translateX(26%);
           .card-back {
-            max-width: 10rem;
+            max-width: 14.5rem;
             top: 3rem;
-            right: 3rem;
+            right: 20rem;
           }
           .card-front {
-            max-width: 11rem;
+            max-width: 14.5rem;
             left: 26rem;
             top: -1.9rem;
+          }
+          .intro-button {
+            right: 35%;
+            bottom: 25rem;
+            font-size: 2.3rem;
           }
         }
       }
@@ -250,7 +277,7 @@
   }
 
   @include responsive(690px) {
-    height: 65rem;
+    height: 68rem;
 
     .container {
       .text {
@@ -262,13 +289,23 @@
         }
       }
       .area-image {
-        top: -10rem;
+        top: -4rem;
         right: 19rem;
         .image {
-          max-width: 23.1rem;
           .card-front {
-            left: 0rem;
-            top: 6.1rem;
+            max-width: 9.5rem;
+            left: 14rem;
+            top: 0.9rem;
+          }
+          .card-back {
+            max-width: 9.5rem;
+            right: 39rem;
+          }
+          .intro-button {
+            width: 100%;
+            right: 56%;
+            bottom: 27rem;
+            max-width: 20.8rem;
           }
         }
       }
@@ -276,7 +313,7 @@
   }
 
   @include responsive(556px) {
-    height: 58rem;
+    height: 63rem;
     .container {
       padding-top: 0;
       .text {
@@ -300,6 +337,7 @@
         .description {
           margin-top: 4.4rem;
           font-size: 2.3rem;
+          font-size: 1.768rem;
         }
         ul {
           flex-direction: column;
@@ -316,7 +354,7 @@
             }
             span {
               width: 100%;
-              font-size: 174%;
+              font-size: 158%;
               br {
                 display: none;
               }
@@ -325,25 +363,27 @@
         }
       }
       .area-image {
-        top: 1rem;
+        top: 4rem;
         right: 28%;
         bottom: 11rem;
-        h2 {
-          display: none;
-        }
         .image {
-          max-width: 32.5rem;
           height: 24.8rem;
           margin-top: -15rem;
           .card-front {
-            max-width: 10rem;
-            top: 11rem;
-            left: 6rem;
+            max-width: 9rem;
+            top: 8rem;
+            left: 20%;
           }
           .card-back {
-            max-width: 12rem;
-            top: 10rem;
-            right: 6rem;
+            max-width: 9rem;
+            top: 11rem;
+            right: 55%;
+          }
+          .intro-button {
+            bottom: 2rem;
+            right: 52%;
+            font-size: 1.613rem;
+            max-width: 13.8rem;
           }
         }
       }
@@ -356,6 +396,13 @@
         padding-right: 8.99rem;
         h3 {
           font-size: 2.097rem;
+        }
+      }
+      .area-image {
+        .image {
+          .card-back {
+            right: 45%;
+          }
         }
       }
     }
@@ -385,18 +432,6 @@
     margin-right: auto;
     .main-text {
       position: relative;
-      .intro-button {
-        max-width: 48.8rem;
-        margin-bottom: 1.6rem;
-        position: absolute;
-        background-color: #605e5e;
-        color: white;
-        padding: 3rem;
-        bottom: 38rem;
-        right: 31%;
-        border-radius: 2rem;
-        padding: 1rem;
-      }
 
       h4 {
         font-weight: 600;
@@ -467,13 +502,18 @@
   }
 
   @include responsive(1050px) {
-    .right-area {
-      .main-text {
-        margin-top: 9rem;
-        h2 {
-          padding: 1rem;
-          bottom: 110%;
-          right: 35%;
+    .container {
+      .right-area {
+        .main-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h2 {
+            padding: 1rem;
+            bottom: 110%;
+            right: 35%;
+          }
         }
       }
     }
@@ -482,40 +522,21 @@
   @include responsive(991px) {
     .container {
       .right-area {
-        margin-top: 0;
-        .intro-button {
-          bottom: 115%;
-          // right: 24%;
-        }
       }
     }
   }
   @include responsive(690px) {
     .container {
       .right-area {
-        margin-top: 7rem;
-        .main-text {
-          .intro-button {
-            width: 100%;
-            left: 22%;
-            max-width: 34.8rem;
-          }
-        }
+        margin-top: 8rem;
       }
     }
   }
   @include responsive(561px) {
     .container {
       .right-area {
+        margin-top: 6rem;
         .main-text {
-          margin-top: 4rem;
-          .intro-button {
-            width: 100%;
-            left: 24%;
-            max-width: 21.8rem;
-            bottom: 101%;
-            font-size: 2.5rem;
-          }
         }
       }
       .cta-button {
@@ -527,13 +548,6 @@
     .container {
       .right-area {
         margin-top: 7.9rem;
-        .main-text {
-          .intro-button {
-            bottom: 39rem;
-            font-size: 2rem;
-            left: 15%;
-          }
-        }
       }
       .cta-button {
         font-size: 2.5rem;
@@ -549,7 +563,7 @@
   .box-card {
     background: url("/img/assets/bg-hero.svg") no-repeat center center;
     max-width: 67rem;
-    height: 67rem;
+    height: 57rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -559,7 +573,7 @@
       flex-direction: column;
       align-items: center;
       max-width: 67rem;
-      height: 67rem;
+      height: 58rem;
       padding-top: 1.6rem;
       h3 {
         color: #fff;
@@ -571,17 +585,17 @@
         text-shadow: 3px 1px 20px #00000069;
       }
       .button {
-        width: 30rem;
+        width: 23rem;
         position: relative;
         margin-top: 1.3rem;
         animation: pulse 2s infinite;
         p {
-          font-size: 67px;
+          font-size: 54px;
           color: #ce2f2f;
           font-weight: bold;
           position: absolute;
-          top: 34%;
-          right: 8.8rem;
+          top: 37%;
+          right: 6.8rem;
         }
       }
     }
@@ -668,7 +682,7 @@
           width: 69%;
           p {
             font-size: 71px;
-            right: 25%;
+            right: 32%;
           }
         }
       }
@@ -878,19 +892,24 @@
     width: 100%;
     padding-bottom: 1rem;
     .left-area {
-      @include flex(column, center, center);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-
       img {
         width: 14rem;
         box-shadow: 3px 1px 20px 0px #e7e7e7;
         border-radius: 1rem;
+        margin-right: auto;
+        margin-left: auto;
       }
       .text-area {
-        @include flex(column, center, center);
+        display: flex;
+        flex-direction: column;
         padding: 2rem 0;
         width: 100%;
         max-width: 81rem;
+        text-align: justify;
         p {
           font-size: 236%;
           strong {
@@ -946,9 +965,6 @@
         }
       }
     }
-
-    @include responsive(610px) {
-    }
   }
   .cta {
     @include flex(row, center, center);
@@ -958,6 +974,18 @@
     img {
       width: 5rem;
       height: auto;
+    }
+  }
+
+  @include responsive(991px) {
+    .text {
+      .left-area {
+        .text-area {
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
   }
 
@@ -990,11 +1018,22 @@
     .text {
       .left-area {
         .text-area {
-          width: 80%;
           p {
-            font-size: 2.4rem;
+          }
+          h3 {
+            font-size: 1.5rem;
           }
         }
+        img {
+          width: 10rem;
+        }
+        // .places {
+        //   li {
+        //     a {
+        //       font-size: 173%;
+        //     }
+        //   }
+        // }
       }
     }
   }
@@ -1270,7 +1309,7 @@
       padding: 0 2rem 4rem 2rem;
       h3 {
         line-height: 4rem;
-        font-size: 2.8rem;
+        font-size: 2rem;
       }
       p {
         font-size: 1.326rem;
