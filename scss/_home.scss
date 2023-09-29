@@ -925,8 +925,8 @@
       .text-area {
         @include flex(column, center, center);
         padding: 2rem 0;
-        width: 91%;
-        max-width: 71rem;
+        width: 100%;
+        max-width: 81rem;
         p {
           font-size: 236%;
           strong {
@@ -1002,6 +1002,7 @@
       .left-area {
         .places {
           ul {
+            gap: 0;
             @include flex(column, center, center);
             li {
               max-width: 100%;
@@ -1061,15 +1062,18 @@
         .text {
           width: 100%;
           max-width: 30rem;
-          padding: 1rem 1rem;
+          padding: 1rem 0rem;
           font-size: 2rem;
           p {
-            font-size: 95%;
+            font-size: 78%;
           }
         }
         .person-information {
           display: flex;
           align-items: center;
+          .image {
+            margin-right: 1rem;
+          }
           .text-information {
             p {
               // padding-left: 2rem;
@@ -1237,7 +1241,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 90rem;
+  max-width: 73rem;
   padding: 0 3rem;
   margin-bottom: 4rem;
   .container {
@@ -1258,7 +1262,7 @@
     }
     h3 {
       color: white;
-      font-size: 6rem;
+      font-size: 5.6rem;
     }
     p {
       color: #fff;
