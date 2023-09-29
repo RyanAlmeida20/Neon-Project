@@ -244,32 +244,32 @@
       }
       .area-image {
         margin: 0px auto;
-        right: 19rem;
+        right: 2rem;
         top: -13rem;
 
-        h2 {
-          margin-bottom: 1.9rem;
-          text-align: center;
-          transform: translateX(10%);
-        }
         .image {
           height: 42.4rem;
           margin: 0 auto;
-          transform: translateX(26%);
+          width: 100%;
+          max-width: 26rem;
+          left: 7rem;
+
           .card-back {
             max-width: 14.5rem;
-            top: 3rem;
-            right: 20rem;
+            top: 5rem;
+            left: 10rem;
           }
           .card-front {
             max-width: 14.5rem;
-            left: 26rem;
-            top: -1.9rem;
+            top: 3rem;
+            left: 0rem;
           }
           .intro-button {
+            width: 100%;
+            max-width: 87%;
             right: 35%;
             bottom: 25rem;
-            font-size: 2.3rem;
+            font-size: 2.6rem;
           }
         }
       }
@@ -294,18 +294,19 @@
         .image {
           .card-front {
             max-width: 9.5rem;
-            left: 14rem;
-            top: 0.9rem;
+            left: 5rem;
+            top: -1.1rem;
           }
           .card-back {
             max-width: 9.5rem;
-            right: 39rem;
+            top: 3rem;
+            left: 12rem;
           }
           .intro-button {
-            width: 100%;
-            right: 56%;
+            width: fit-content;
+            right: 14%;
             bottom: 27rem;
-            max-width: 20.8rem;
+            max-width: 29.8rem;
           }
         }
       }
@@ -377,11 +378,11 @@
           .card-back {
             max-width: 9rem;
             top: 11rem;
-            right: 55%;
+            right: 45%;
           }
           .intro-button {
             bottom: 2rem;
-            right: 52%;
+            right: 19%;
             font-size: 1.613rem;
             max-width: 13.8rem;
           }
