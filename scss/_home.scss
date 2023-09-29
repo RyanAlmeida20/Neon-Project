@@ -6,13 +6,13 @@
   .container {
     @include flex(row, flex-start, space-between);
     .text {
-      width: 100%;
-      max-width: 68.4rem;
+      width: 117%;
       h3 {
-        color: white;
+        color: $brand-blue-strong;
         margin-bottom: 3.2rem;
         opacity: 0.8;
         font-weight: 600;
+        font-size: 6rem;
       }
       h1 {
         color: white;
@@ -23,21 +23,25 @@
         max-width: 32rem;
         text-align: center;
         padding: 1rem 3rem;
+        font-size: 3.6rem;
       }
       p {
         color: white;
-        font-size: 1.9rem;
+        font-size: 2.9rem;
         margin-top: 6.4rem;
       }
       ul {
-        margin-top: 6.4rem;
+        margin-top: 2.4rem;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
         li {
           display: flex;
           align-items: center;
-          width: 21rem;
+          width: 100%;
+          span {
+            font-size: 2.7rem;
+            width: 100%;
+          }
           :not(:last-child) {
             margin-right: 2rem;
           }
@@ -105,6 +109,7 @@
   }
 
   @include responsive(1440px) {
+    height: 96.6rem;
     .container {
       .area-image {
         position: relative;
@@ -131,7 +136,7 @@
   }
   @include responsive(1050px) {
     padding-top: 12rem;
-    height: 56.6rem;
+    height: 81.6rem;
     .container {
       margin: 0;
       .text {
@@ -193,7 +198,7 @@
       }
       .area-image {
         margin: 0px auto;
-        right: 3rem;
+        right: -8rem;
         h2 {
           margin-bottom: 1.9rem;
           text-align: center;
@@ -205,18 +210,20 @@
           margin: 0 auto;
           transform: translateX(26%);
           .card-back {
-            max-width: 23rem;
-            top: 20rem;
-            right: 14rem;
+            max-width: 10rem;
+            top: 3rem;
+            right: 3rem;
           }
           .card-front {
-            max-width: 21rem;
-            left: -4rem;
-            top: 16.1rem;
+            max-width: 11rem;
+            left: 26rem;
+            top: -1.9rem;
           }
           .circle {
-            max-width: 42.9rem;
-            height: 37.8rem;
+            max-width: 26.9rem;
+            height: 23.8rem;
+            top: -10.2rem;
+            right: 0.3rem;
           }
         }
       }
@@ -265,7 +272,8 @@
         }
       }
       .area-image {
-        right: 7rem;
+        right: -8rem;
+        bottom: 6rem;
         h2 {
           display: none;
         }
@@ -276,12 +284,13 @@
           .circle {
             height: 18.8rem;
             max-width: 25.7rem;
+            top: 3.8rem;
             right: 6.3rem;
           }
           .card-front {
-            max-width: 12rem;
-            top: 10rem;
-            left: 4rem;
+            max-width: 10rem;
+            top: 11rem;
+            left: 6rem;
           }
           .card-back {
             max-width: 12rem;
@@ -352,7 +361,7 @@
         color: white;
         padding: 3rem;
         bottom: 38rem;
-        right: 20rem;
+        right: 31%;
         border-radius: 2rem;
         padding: 1rem;
       }
@@ -448,9 +457,9 @@
   @include responsive(991px) {
     .container {
       .right-area {
-        margin-top: 8.9rem;
-        h2 {
-          bottom: 110%;
+        margin-top: 0;
+        .intro-button {
+          bottom: 115%;
           right: 24%;
         }
       }
@@ -464,7 +473,7 @@
         .main-text {
           h2 {
             bottom: 101%;
-            right: 20%;
+            right: 24%;
             font-size: 2.5rem;
           }
         }
