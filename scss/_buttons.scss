@@ -1,19 +1,19 @@
 .btn-secondary {
   border: 1px solid #00a5f0;
-  background-color: transparent;
-  color: $brand-blue-light;
+  background-color: white;
+  color: $brand-blue-normal;
   font-weight: 600;
   &:hover {
-    background-color: $brand-blue-light;
+    background-color: transparent;
     color: white;
   }
 
   &.white {
-    border: 1px solid white;
-    color: white;
+    // border: 1px solid white;
+    color: $brand-blue-normal;
     &:hover {
-      background-color: white;
-      color: $brand-blue-normal;
+      // background-color: white;
+      color: white;
     }
   }
 }
