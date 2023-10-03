@@ -424,7 +424,7 @@
           .intro-button {
             bottom: 2rem;
             right: 19%;
-            font-size: 1.613rem;
+            font-size: 1.4rem;
             max-width: 13.8rem;
           }
         }
@@ -435,9 +435,19 @@
   @include responsive(375px) {
     .container {
       .text {
+        margin-left: 0;
         padding-right: 8.99rem;
         h3 {
           font-size: 2.097rem;
+        }
+        .area-image {
+          .image {
+            .intro-button {
+              width: 100%;
+              max-width: 16.8rem;
+              text-align: center;
+            }
+          }
         }
       }
       .area-image {
@@ -605,7 +615,6 @@
   .box-card {
     background: url("/img/assets/bg-hero.svg") no-repeat center center;
     max-width: 67rem;
-    height: 57rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -615,7 +624,6 @@
       flex-direction: column;
       align-items: center;
       max-width: 67rem;
-      height: 58rem;
       padding-top: 1.6rem;
       h3 {
         color: #fff;
@@ -645,23 +653,17 @@
     .second-card-box {
       margin-left: auto;
       margin-right: auto;
-      border-radius: 1rem;
-      background-color: #00aaef;
       width: 100%;
       max-width: 54.5rem;
-      padding: 1.9rem 2.9rem;
-      position: absolute;
-      right: 6rem;
-      bottom: -13rem;
-      box-shadow: inset rgba(52, 48, 21, 0.23) 0px -1px 20px 4px;
       p {
         color: #fff;
         text-align: center;
-        font-family: Titillium Web;
+        font-family: "Roboto", sans-serif;
         font-size: 3.6rem;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        padding: 3rem 0;
         strong {
           font-weight: 900;
         }
@@ -677,15 +679,12 @@
       .first-card-box {
       }
       .second-card-box {
-        right: 5%;
-        bottom: -25%;
         padding: 0.9rem 0.9rem;
       }
     }
   }
   @include responsive(674px) {
     .box-card {
-      height: 51rem;
       width: 92%;
       .first-card-box {
         .button {
@@ -700,8 +699,6 @@
       }
       .second-card-box {
         width: 95%;
-        right: 1rem;
-        bottom: -6rem;
         p {
           font-size: 242%;
         }
@@ -712,7 +709,6 @@
   }
   @include responsive(561px) {
     .box-card {
-      height: 48rem;
       .first-card-box {
         h3 {
           font-size: 236%;
@@ -729,8 +725,8 @@
         }
       }
       .second-card-box {
-        bottom: -15%;
         p {
+          padding-top: 3rem;
           font-size: 194%;
         }
       }
@@ -738,7 +734,6 @@
   }
   @include responsive(375px) {
     .box-card {
-      height: 42rem;
       .first-card-box {
         .button {
           p {
@@ -751,6 +746,7 @@
         width: 94%;
         right: 3%;
         p {
+          padding-bottom: 1rem;
           font-size: 181%;
         }
       }
@@ -889,7 +885,6 @@
         h2 {
           bottom: 38rem;
           right: 7rem;
-          // right: -4%;
         }
       }
     }
@@ -928,7 +923,7 @@
 
 .s-information {
   @include flex(column, center, center);
-  padding: 22rem 2rem 5rem 2rem;
+  padding: 7rem 2rem 5rem 2rem;
   .text {
     @include flex(row, center, space-evenly);
     width: 100%;
@@ -1056,7 +1051,7 @@
   }
 
   @include responsive(674px) {
-    padding-top: 12rem;
+    padding-top: 6rem;
     .text {
       .left-area {
         .text-area {
