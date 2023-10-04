@@ -70,11 +70,15 @@
       }
       #area-image {
         display: none;
+        h2 {
+          background-color: #0072ff;
+        }
       }
     }
 
     #recorra {
       display: none;
+      background-color: #004fb3;
     }
 
     .area-image {
@@ -115,6 +119,8 @@
           padding: 1rem;
           z-index: 2;
           font-size: 4rem;
+        }
+        h2 {
         }
       }
     }
@@ -457,6 +463,9 @@
           }
         }
       }
+      #recorra {
+        margin-left: 15%;
+      }
     }
   }
 }
@@ -526,7 +535,7 @@
       padding: 1rem;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 3rem;
+      margin-top: 5rem;
       text-align: center;
       color: white;
     }
@@ -660,9 +669,6 @@
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-size: 3.6rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
         padding: 3rem 0;
         strong {
           font-weight: 900;
@@ -747,7 +753,7 @@
         right: 3%;
         p {
           padding-bottom: 1rem;
-          font-size: 181%;
+          font-size: 153%;
         }
       }
     }
@@ -1003,16 +1009,6 @@
       }
     }
   }
-  .cta {
-    @include flex(row, center, center);
-    padding: 2rem 3rem;
-    width: 100%;
-    max-width: 74rem;
-    img {
-      width: 5rem;
-      height: auto;
-    }
-  }
 
   @include responsive(991px) {
     .text {
@@ -1040,14 +1036,6 @@
         }
       }
     }
-    .cta {
-      font-size: 1.38em;
-      line-height: 3rem;
-      padding: 2rem 1rem;
-      .faa-ring {
-        margin-right: 1rem;
-      }
-    }
   }
 
   @include responsive(674px) {
@@ -1064,13 +1052,6 @@
         img {
           width: 10rem;
         }
-        // .places {
-        //   li {
-        //     a {
-        //       font-size: 173%;
-        //     }
-        //   }
-        // }
       }
     }
   }
@@ -1228,6 +1209,18 @@
       height: 20.9rem;
     }
   }
+  .cta {
+    @include flex(row, center, center);
+    padding: 2rem 3rem;
+    width: 100%;
+    max-width: 74rem;
+    margin-top: 3rem;
+
+    img {
+      width: 5rem;
+      height: auto;
+    }
+  }
   @include responsive(991px) {
     .container {
       .top {
@@ -1246,6 +1239,7 @@
       }
     }
   }
+
   @include responsive(760px) {
     .container {
       .slide-depoimentos {
@@ -1255,6 +1249,18 @@
       }
     }
   }
+
+  @include responsive(561px) {
+    .cta {
+      font-size: 1.38em;
+      line-height: 3rem;
+      padding: 2rem 1rem;
+      .faa-ring {
+        margin-right: 1rem;
+      }
+    }
+  }
+
   @include responsive(480px) {
     .container {
       padding: 0;
@@ -1275,6 +1281,12 @@
       }
     }
   }
+
+  @include responsive(375px) {
+    .cta {
+      font-size: 1.3rem;
+    }
+  }
 }
 
 .s-authority {
@@ -1285,17 +1297,20 @@
   padding: 0 3rem;
   margin-bottom: 4rem;
   .container {
-    box-shadow: rgba(52, 48, 21, 0.23) 1px 8px 11px 0px;
+    position: relative;
     padding: 0 3rem 4rem 3rem;
     border-radius: 1rem;
-    background-color: $brand-ciano;
+    background-color: #00bee2;
     @include flex(column, center, center);
     img {
-      width: 20rem;
+      position: absolute;
+      bottom: 30rem;
+      width: 22rem;
       height: auto;
       transition: all 0.3s;
     }
     h3 {
+      margin-top: 19rem;
       color: white;
       font-size: 5.6rem;
     }
@@ -1326,7 +1341,11 @@
   }
   @include responsive(674px) {
     .container {
+      img {
+        bottom: 24rem;
+      }
       h3 {
+        margin-top: 16rem;
         line-height: 6rem;
         font-size: 4rem;
       }
@@ -1340,6 +1359,9 @@
   @include responsive(561px) {
     .container {
       padding: 0 2rem 4rem 2rem;
+      img {
+        bottom: 20rem;
+      }
       h3 {
         line-height: 4rem;
         font-size: 2rem;
@@ -1352,8 +1374,8 @@
   @include responsive(375px) {
     .container {
       padding: 0 1rem 4rem 1rem;
+
       p {
-        text-shadow: 0px 0px 6px #000000de;
         text-align: justify;
         font-size: 1.2rem;
       }
