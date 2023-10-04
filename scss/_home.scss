@@ -725,6 +725,7 @@
           font-size: 285%;
         }
         .button {
+          margin-top: 4.3rem;
           width: 69%;
           p {
             font-size: 71px;
@@ -973,14 +974,12 @@
       }
       .places {
         width: 100%;
-        max-width: 74rem;
+
         ul {
           @include flex(row, center, center);
           gap: 1rem;
           width: 100%;
           max-width: 100%;
-          padding-left: 2rem;
-          padding-right: 2rem;
 
           li {
             width: 100%;
@@ -1217,6 +1216,8 @@
     width: 100%;
     max-width: 74rem;
     margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 
     img {
       width: 5rem;
