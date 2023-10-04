@@ -293,10 +293,11 @@
   }
 
   @include responsive(727px) {
-    height: 68rem;
+    height: 71rem;
     .container {
       .text {
         margin-left: 9%;
+        margin-bottom: 1rem;
         h3 {
           font-size: 3rem;
         }
@@ -313,7 +314,7 @@
           top: 1.3rem;
         }
         p {
-          padding-top: 6rem;
+          padding-top: 10rem;
         }
         ul {
           margin-top: 1.9rem;
@@ -341,7 +342,7 @@
           .intro-button {
             width: fit-content;
             right: 14%;
-            bottom: 27rem;
+            bottom: 23rem;
             max-width: 29.8rem;
           }
         }
@@ -377,7 +378,7 @@
           font-size: 3.2rem;
         }
         .description {
-          margin-top: 4.4rem;
+          margin-top: 2.4rem;
           font-size: 2.3rem;
           font-size: 1.7rem;
           padding-right: 5rem;
@@ -428,7 +429,7 @@
             right: 45%;
           }
           .intro-button {
-            bottom: 2rem;
+            bottom: -1rem;
             right: 19%;
             font-size: 1.4rem;
             max-width: 13.8rem;
@@ -439,6 +440,7 @@
   }
 
   @include responsive(375px) {
+    height: 67rem;
     .container {
       .text {
         margin-left: 0;
