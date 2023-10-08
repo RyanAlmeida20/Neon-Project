@@ -3,10 +3,15 @@ footer {
   text-align: center;
   padding: 2rem 0;
 
-  .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .fp-overflow {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
     img {
       height: auto;
       width: 30rem;
@@ -17,7 +22,6 @@ footer {
       font-weight: 500;
     }
   }
-
   @include responsive(1050px) {
     .container {
       padding: 0 1.5rem;

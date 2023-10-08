@@ -1,4 +1,5 @@
 .s-hero {
+  opacity: 1;
   width: 100%;
   height: 78.6rem;
   background: url("../img/bg-hero.svg") no-repeat center center;
@@ -453,8 +454,9 @@
           .image {
             .intro-button {
               width: 100%;
-              max-width: 16.8rem;
+              max-width: 12.8rem;
               text-align: center;
+              margin-left: 28%;
             }
           }
         }
@@ -496,7 +498,7 @@
     margin-right: auto;
     .main-text {
       position: relative;
-
+      opacity: 1;
       h4 {
         font-weight: 600;
         font-size: 3rem;
@@ -631,6 +633,7 @@
     margin-right: auto;
     margin-top: 5rem;
     border-radius: 1rem;
+    opacity: 1;
     .first-card-box {
       display: flex;
       flex-direction: column;
@@ -1198,18 +1201,23 @@
 }
 
 .s-depoimentos {
-  .top {
-    margin-bottom: 4rem;
-    span {
-      display: block;
-      color: $gray-500;
-      margin-bottom: 1.4rem;
+  .fp-overflow {
+    overflow-y: visible !important;
+
+    .top {
+      opacity: 1;
+      span {
+        display: block;
+        color: $gray-500;
+        margin-bottom: 1.4rem;
+      }
     }
-  }
-  .slide-depoimentos {
-    overflow: hidden;
-    .card-depoimento {
-      height: 20.9rem;
+    .slide-depoimentos {
+      overflow: hidden;
+      opacity: 1;
+      .card-depoimento {
+        height: 20.9rem;
+      }
     }
   }
   .cta {
@@ -1217,7 +1225,7 @@
     padding: 2rem 3rem;
     width: 100%;
     max-width: 74rem;
-    margin-top: 3rem;
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -1299,6 +1307,9 @@
   width: 100%;
   max-width: 73rem;
   padding: 0 3rem;
+  .fp-overflow {
+    overflow: visible !important;
+  }
   .container {
     position: relative;
     padding: 0 3rem 4rem 3rem;
@@ -1483,4 +1494,8 @@
 .faa-ring {
   -webkit-animation: ring 0.7s ease-in-out infinite;
   animation: ring 2s infinite;
+}
+
+.fp-watermark {
+  display: none;
 }
