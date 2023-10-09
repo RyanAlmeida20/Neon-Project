@@ -1201,7 +1201,7 @@
 }
 
 .s-depoimentos {
-  .fp-overflow {
+  .container {
     overflow-y: visible !important;
 
     .top {
@@ -1216,7 +1216,15 @@
       overflow: hidden;
       opacity: 1;
       .card-depoimento {
-        height: 20.9rem;
+        height: 24rem;
+        .user {
+          img {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 5rem;
+            height: 5rem;
+          }
+        }
       }
     }
   }
@@ -1225,7 +1233,7 @@
     padding: 2rem 3rem;
     width: 100%;
     max-width: 74rem;
-    margin-top: 10rem;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -1247,7 +1255,7 @@
       }
       .slide-depoimentos {
         .card-depoimento {
-          height: 22rem;
+          height: 30rem;
         }
       }
     }
@@ -1256,14 +1264,26 @@
   @include responsive(760px) {
     .container {
       .slide-depoimentos {
+        height: 27.9rem;
         .card-depoimento {
+          padding: 1.7rem 1.2rem 0.3rem 2.2rem;
           height: 29.9rem;
+          p {
+            font-size: 1.6rem;
+          }
         }
+      }
+      .cta {
+        margin-top: 3rem;
       }
     }
   }
 
   @include responsive(561px) {
+    .slide-depoimentos {
+      .card-depoimentos {
+      }
+    }
     .cta {
       font-size: 1.38em;
       line-height: 3rem;
@@ -1292,12 +1312,16 @@
           height: 29rem;
         }
       }
+      .cta {
+        max-width: 34rem;
+      }
     }
   }
 
   @include responsive(375px) {
     .cta {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      max-width: 30rem;
     }
   }
 }
@@ -1307,7 +1331,7 @@
   width: 100%;
   max-width: 73rem;
   padding: 0 3rem;
-  .fp-overflow {
+  .container {
     overflow: visible !important;
   }
   .container {
@@ -1318,7 +1342,7 @@
     @include flex(column, center, center);
     img {
       position: absolute;
-      bottom: 30rem;
+      bottom: 32rem;
       width: 22rem;
       height: auto;
       transition: all 0.3s;
@@ -1354,7 +1378,7 @@
   @include responsive(674px) {
     .container {
       img {
-        bottom: 24rem;
+        bottom: 22rem;
       }
       h3 {
         margin-top: 16rem;
@@ -1372,7 +1396,7 @@
     .container {
       padding: 0 2rem 4rem 2rem;
       img {
-        bottom: 20rem;
+        bottom: 18rem;
       }
       h3 {
         line-height: 4rem;
