@@ -1259,7 +1259,8 @@
     width: 100%;
     max-width: 74rem;
     margin: 4rem auto;
-
+    position: relative;
+    z-index: 99999;
     img {
       width: 5rem;
       height: auto;
