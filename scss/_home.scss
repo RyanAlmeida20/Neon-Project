@@ -535,7 +535,6 @@
       max-width: 48.8rem;
       margin-bottom: 1.6rem;
       background-color: #605e5e;
-      padding: 3rem;
       border-radius: 2rem;
       padding: 1rem;
       margin-left: auto;
@@ -943,7 +942,7 @@
   .text {
     @include flex(row, center, space-evenly);
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
     .left-area {
       display: flex;
       flex-direction: column;
@@ -1019,6 +1018,10 @@
   }
   .video {
     margin: 0 4rem;
+    width: 100%;
+    max-width: 85rem;
+    margin-left: auto;
+    margin-right: auto;
     .horizontal {
       width: 100%;
     }
@@ -1251,9 +1254,7 @@
     padding: 2rem 3rem;
     width: 100%;
     max-width: 74rem;
-
-    margin-left: auto;
-    margin-right: auto;
+    margin: 4rem auto;
 
     img {
       width: 5rem;
@@ -1457,12 +1458,9 @@
   0% {
     transform: scale(1);
   }
-  50% {
-    color: $brand-blue-light;
-  }
+
   100% {
     transform: scale(1.1);
-    color: $brand-ciano;
   }
 }
 
