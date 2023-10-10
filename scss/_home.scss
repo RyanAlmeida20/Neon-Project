@@ -689,6 +689,9 @@
     .box-card {
       max-width: 61rem;
       .first-card-box {
+        h3 {
+          width: 52rem;
+        }
       }
       .second-card-box {
         padding: 0.9rem 0.9rem;
@@ -1014,6 +1017,14 @@
       }
     }
   }
+  .video {
+    .horizontal {
+      width: 100%;
+    }
+    .vertical {
+      display: none;
+    }
+  }
 
   @include responsive(991px) {
     .text {
@@ -1063,8 +1074,14 @@
   }
 
   @include responsive(375px) {
-    .cta {
-      font-size: 1.3rem;
+    .video {
+      .horizontal {
+        display: none;
+      }
+      .vertical {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
@@ -1286,7 +1303,7 @@
       }
     }
     .cta {
-      font-size: 1.38em;
+      font-size: 1.68em;
       line-height: 3rem;
       padding: 2rem 1rem;
       .faa-ring {
@@ -1321,7 +1338,7 @@
 
   @include responsive(375px) {
     .cta {
-      font-size: 1.2rem;
+      font-size: 1.44rem;
       max-width: 30rem;
     }
   }
