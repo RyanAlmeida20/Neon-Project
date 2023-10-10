@@ -1018,6 +1018,7 @@
     }
   }
   .video {
+    margin: 0 4rem;
     .horizontal {
       width: 100%;
     }
@@ -1082,9 +1083,6 @@
         width: 100%;
       }
     }
-  }
-
-  @include responsive(375px) {
   }
 }
 

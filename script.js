@@ -9,5 +9,8 @@ function fixedMenu() {
     header.classList.remove("fixed-menu");
   }
 }
+// const video = document.getElementsByClassName("horizontal");
+// video.muted = true;
+// video.play();
 
 document.addEventListener("scroll", fixedMenu);
