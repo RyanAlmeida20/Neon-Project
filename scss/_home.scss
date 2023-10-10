@@ -542,6 +542,8 @@
       margin-top: 5rem;
       text-align: center;
       color: white;
+      position: relative;
+      z-index: 9999;
     }
     .btn {
       position: relative;
@@ -606,6 +608,7 @@
       }
       .cta-button {
         font-size: 2.7rem;
+        margin-top: 0;
       }
     }
   }
@@ -723,6 +726,7 @@
   }
   @include responsive(561px) {
     .box-card {
+      margin-top: 3rem;
       .first-card-box {
         h3 {
           font-size: 236%;
@@ -762,7 +766,7 @@
         right: 3%;
         p {
           padding-bottom: 1rem;
-          font-size: 153%;
+          font-size: 183%;
         }
       }
     }
@@ -1293,7 +1297,7 @@
         }
       }
       .cta {
-        margin-top: 3rem;
+        margin-top: 5rem;
       }
     }
   }
