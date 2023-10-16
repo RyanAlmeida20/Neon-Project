@@ -1459,6 +1459,20 @@
   animation-name: pulse-color;
 }
 
+.faa-ring {
+  margin-right: 2rem;
+  color: white;
+}
+
+.faa-ring {
+  -webkit-animation: ring 0.7s ease-in-out infinite;
+  animation: ring 2s infinite;
+}
+
+.fp-watermark {
+  display: none;
+}
+
 @keyframes pulse-color {
   0% {
     transform: scale(1);
@@ -1496,11 +1510,6 @@
   }
 }
 
-.faa-ring {
-  margin-right: 2rem;
-  color: white;
-}
-
 @keyframes ring {
   0% {
     transform: rotate(-15deg);
@@ -1535,12 +1544,4 @@
   90% {
     transform: rotate(0deg);
   }
-}
-.faa-ring {
-  -webkit-animation: ring 0.7s ease-in-out infinite;
-  animation: ring 2s infinite;
-}
-
-.fp-watermark {
-  display: none;
 }
